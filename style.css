@@ -1,0 +1,6 @@
+.item-link:hover{
+    color:aqua;
+}
+.list{
+    display: flex;  
+}
