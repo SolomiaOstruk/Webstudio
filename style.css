@@ -1,6 +1,76 @@
-font-family'Roboto';
-font-style:normal;
-font-weight:700;
-font-family'Roboto';
-font-style:normal;
-font-weight:400;
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+
+    font-family: 'Roboto';
+    font-style: normal;
+font-weight: 700;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+
+ font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+}
+.card-title{
+    
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+   
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+
+
+
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+}
+
+.button{
+   
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+.card-text{
+    
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.card-name{
+  
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+
+
+}
