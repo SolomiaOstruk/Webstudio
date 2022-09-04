@@ -1,7 +1,5 @@
 body{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
+  
 
     font-family: 'Roboto';
     font-style: normal;
@@ -17,13 +15,6 @@ font-weight: 400;
 }
 .card-title{
     
-font-size: 44px;
-line-height: 60px;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: #FFFFFF;
-   
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
