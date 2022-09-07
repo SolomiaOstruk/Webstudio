@@ -1,41 +1,81 @@
+.a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.tel{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: gray;
+}
+.address{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: black;
+}
+
 body{
   
 
+}
+
+.card-title{
     font-family: 'Roboto';
-    font-style: normal;
-font-weight: 700;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
 
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 500;
-
- font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-}
-.card-title{
-    
+font-weight: 700;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
 
-
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
 font-size: 36px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 
-
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-
 }
 
 .button{
@@ -49,19 +89,27 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 }
 .card-text{
-    
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
 color: #757575;
 }
 .card-name{
-  
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
-
-
+}
+.header-link{
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #212121;
 }
