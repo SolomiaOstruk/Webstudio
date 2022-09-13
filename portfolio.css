@@ -37,11 +37,12 @@ color: #757575;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;    
+    color: #212121; 
   }
 
   .main-link:hover {
-   color: #2196F3;
+ background-color:#2196F3;
+ color: #FFFFFF;  
   }
 
   .header-logotype{
@@ -88,8 +89,12 @@ color: #757575;
     color: #2196F3;
   }
 
-  .color-logo{
+  .logo-color{
      color: #FFFFFF;
+  }
+
+  footer{
+    background-color: #2F303A;
   }
 
   .location{
