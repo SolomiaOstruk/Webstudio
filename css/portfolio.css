@@ -1,0 +1,161 @@
+/* section-heder */
+.hader-section {
+  height: 80px;
+}
+
+.header-logotype {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  width: 145px;
+  height: 31px;
+}
+
+.color-logo {
+  color: #000000;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list li {
+  margin-right: 50px;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  width: 45px;
+  height: 16px;
+}
+
+.header-link:hover {
+  color: #2196f3;
+}
+
+.button-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.head-contakt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  width: 135px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-contakt:hover {
+  color: #2196f3;
+}
+
+/* <!-- cекція button --> */
+
+.container {
+  padding-top: 100px;
+}
+
+.button-list {
+  display: flex;
+  padding-left: 517px;
+  padding-right: 517px;
+}
+
+.button-list li {
+  margin-right: 50px;
+}
+
+.button-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.button-btn:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+/* <!-- картинки --> */
+
+.pictures-item {
+  padding-right: 30px;
+}
+
+.pictures-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pictures-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.pictures-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* footer */
+
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-color {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+.location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-contakt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}

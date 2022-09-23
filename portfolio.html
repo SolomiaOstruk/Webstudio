@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
 
   </head>
 
   <body>
     <header class="header-section" >
+      <div class="container">
         <a href="/" class="header-logotype">Web<span class="color-logo">Studio</span></a>
       <ul class="header-list">
         <li class="header-item" >
@@ -26,28 +28,32 @@
       </ul>
       <a href="tel:+380991111111"  class="head-contakt"  > +380991111111 </a>
       <a href="malto:info@example" class="head-contakt">info@example</a>
+    </div>
     </header>
     <main> 
-        <!-- cекція 1 -->
-          <ul class="number1-list">
-            <li class="number1-item">
-            <button type="button" class="main-link">Усе</button>
+        <!-- cекція button -->
+        <div class="container">
+          <ul class="button-list">
+            <li class="button-item">
+            <button type="button" class="button-btn">Усе</button>
           </li>
-          <li class="number1-item">
-            <button type="button" class="main-link">Веб-сайти </button>
+          <li class="button-item">
+            <button type="button" class="button-btn">Веб-сайти </button>
           </li>
-          <li class="number1-item">
-            <button href="/"  class="main-link">Застосунки</button> 
+          <li class="button-item">
+            <button href="/"  class="button-btn">Застосунки</button> 
           </li>
-          <li class="number1-item">
-            <button href="/"  class="main-link">Дизайн</button>  
+          <li class="button-item">
+            <button href="/"  class="button-btn">Дизайн</button>  
           </li>
-          <li class="number1-item">
-            <button href="/"  class="main-link">Маркетинг</button> 
+          <li class="button-item">
+            <button href="/"  class="button-btn">Маркетинг</button>
           </li>
           </ul>
+          </div>
         
         <!-- картинки -->
+        <div class="container">
         <ul class="pictures-list">
           <li class="pictures-item">
         <img src="./img/box1.png" alt="box1"/>
@@ -94,14 +100,17 @@
         <p class="pictures-name"> Застосунок</p>
       </li>
       </ul>
+    </div>
     </main>
     <footer>
       <!-- Кінець  -->
       <section class="final-section">
+        <div class="container">
         <a href="/" class="footer-logo">Web<span class="logo-color">Studio</span></a>
         <address class="location">м. Київ пр-т вулиця Лесі Українки, 26</address>
         <a href="tel:+380991111111"  class="footer-contakt" > +380991111111 </a>
         <a href="malto:info@example" class="footer-contakt" >info@example</a>
+        </div>
       </section>
     </footer>
 </html>
