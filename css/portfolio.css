@@ -77,6 +77,11 @@
 .header-contakt:hover {
   color: #2196f3;
 }
+
+main{
+  padding-bottom: 94px;
+}
+
 /* <!-- cекція button --> */
 
 .button-list {
@@ -89,11 +94,7 @@
 }
 
 .button-list li {
-  margin-right: 50px;
-}
-
-.button-item {
-  background-color: #f5f4fa;
+  margin-right: 8px;
 }
 
 .button-btn {
@@ -103,6 +104,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .button-btn:hover {
@@ -132,6 +140,7 @@
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
+  padding-left: 24px;
 }
 
 .pictures-name {
@@ -140,18 +149,21 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.pictures-list:nth-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-.pictures-list:nth-child(3n) {
-  margin-right: 0;
+  padding-left: 24px;
 }
 
 .pictures-item {
-  padding-right: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 270px;
+}
+
+.pictures-item:nth-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.pictures-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* footer */
