@@ -66,7 +66,7 @@
   width: 16px;
   height: 12px;
   fill: #757575;
-
+  margin-right: 10px;
 }
 
 .icon-tel {
@@ -74,7 +74,7 @@
   height: 16px;
   fill: #757575;
   align-items: center;
-
+  margin-right: 10px;
 }
 
 .list-header {
@@ -95,7 +95,7 @@
   color: #2196f3;
 }
 
-.icon-tel:hover{
+.icon-tel:hover {
   fill: #2196f3;
 }
 
@@ -182,8 +182,6 @@
 .text-item::before {
   content: "";
   display: block;
- 
-  background-repeat: no-repeat;
   background: #f5f4fa;
   border-radius: 4px;
   width: 270px;
@@ -195,22 +193,28 @@
 }
 
 .text-item:nth-child(1)::before {
-  background-image: url(../images/antenna.jpg);
+  background-image: url(../images/antenna.png);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .text-item:nth-child(2)::before {
-  background-image: url(../images/clock.jpg);
+  background-image: url(../images/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .text-item:nth-child(3)::before {
-  background-image: url(../images/diagram.jpg);
+  background-image: url(../images/diagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .text-item:nth-child(4)::before {
-  background-image: url(../images/astronaut.jpg);
+  background-image: url(../images/astronaut\ .png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* <!-- Чим ми займаємось --> */
@@ -342,24 +346,26 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 47px;
 }
 
 .logo-list {
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .logo-icon {
   fill: currentColor;
-  width:45px;
-  height:45px;
-} 
+  width: 45px;
+  height: 45px;
+}
 
-.logo-link{
+.logo-link {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width:170px ;
+  width: 170px;
   height: 85px;
   display: flex;
   align-items: center;
@@ -378,17 +384,16 @@
   display: flex;
   align-items: center;
   margin-top: 16px;
-
 }
 
-.footer-title{
+.footer-title {
   font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-text-align: left;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
 }
 
 .footer-contact-icon {
@@ -396,7 +401,7 @@ text-align: left;
 
   width: 20px;
   height: 20px;
-}  
+}
 
 .footer-link {
   padding: 12px;
@@ -408,7 +413,7 @@ text-align: left;
   border-radius: 50%;
 }
 
-.footer-item{
+.footer-item {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -424,12 +429,11 @@ text-align: left;
   color: #e5e5e5;
 }
 
-footer .container{
+footer .container {
   display: flex;
-  
 }
 
-.footer-blok{
+.footer-blok {
   margin-right: 70px;
 }
 
