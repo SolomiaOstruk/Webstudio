@@ -58,15 +58,33 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  width: 135px;
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.icon-email {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+
+}
+
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  align-items: center;
+
 }
 
 .list-header {
   display: flex;
   margin-left: auto;
   align-items: center;
+}
+
+.item-header {
+  display: flex;
 }
 
 .item-header:nth-child(2) {
@@ -76,6 +94,15 @@
 .header-contakt:hover {
   color: #2196f3;
 }
+
+.icon-tel:hover{
+  fill: #2196f3;
+}
+
+.icon-email:hover {
+  fill: #2196f3;
+}
+
 /* main */
 
 /* section-hero */
@@ -88,7 +115,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/box18.png);
+    url(../images/effectivesolutions.jpg);
 }
 .hero-title {
   font-weight: 900;
@@ -115,20 +142,6 @@
   padding-left: 24px;
   padding-right: 24px;
   border: none;
-}
-
-.box {
-  background-image: linear-gradient(
-      to top,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/box18.png);
-  padding-top: 300px;
-  padding-bottom: 300px;
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
 }
 
 /* <!-- Секція текст --> */
@@ -169,7 +182,7 @@
 .text-item::before {
   content: "";
   display: block;
-  background-position: center;
+ 
   background-repeat: no-repeat;
   background: #f5f4fa;
   border-radius: 4px;
@@ -177,26 +190,27 @@
   height: 120px;
 }
 
-
 .text-item:nth-child(4) {
   margin-right: 0;
 }
 
 .text-item:nth-child(1)::before {
- background-image: url(../images/antenna\ 1.png);
- background-size: 70px;
+  background-image: url(../images/antenna.jpg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .text-item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.png);
+  background-image: url(../images/clock.jpg);
 }
 
 .text-item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.png);
+  background-image: url(../images/diagram.jpg);
 }
 
 .text-item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.png);
+  background-image: url(../images/astronaut.jpg);
 }
 
 /* <!-- Чим ми займаємось --> */
@@ -288,7 +302,119 @@
   color: #757575;
 }
 
+.socials-contact {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.socials-item {
+  width: 44px;
+  height: 44px;
+}
+
+.socials-link:hover .socials-contact {
+  fill: #ffffff;
+}
+
+.socials-link {
+  padding: 12px;
+  display: flex;
+}
+
+.socials-link:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+/* Постійні клієнти */
+.card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.logo-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  fill: currentColor;
+  width:45px;
+  height:45px;
+} 
+
+.logo-link{
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width:170px ;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.logo-link:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
 /* footer */
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+
+}
+
+.footer-title{
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+text-align: left;
+}
+
+.footer-contact-icon {
+  fill: #ffffff;
+
+  width: 20px;
+  height: 20px;
+}  
+
+.footer-link {
+  padding: 12px;
+  display: flex;
+}
+
+.footer-link:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.footer-item{
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
 .footer-contakt {
   font-weight: 400;
@@ -296,6 +422,15 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #e5e5e5;
+}
+
+footer .container{
+  display: flex;
+  
+}
+
+.footer-blok{
+  margin-right: 70px;
 }
 
 .contakt-item {
