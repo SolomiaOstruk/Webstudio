@@ -38,7 +38,7 @@
           <li class="item-header">
             <a href="malto:info@example" class="header-contakt">
               <svg class="icon-email">
-                <use href="./images/symbol-defs.svg#icon-email"></use>
+                <use href="./images/symbol-defs.svg#icon-envelope-hover-2"></use>
               </svg>
               <span>info@devstudio.com</span>
             </a>
@@ -46,7 +46,7 @@
           <li class="item-header">
             <a href="tel:+380991111111" class="header-contakt">
               <svg class="icon-tel">
-                <use href="./images/symbol-defs.svg#icon-tel"></use>
+                <use href="./images/symbol-defs.svg#icon-smartphone-1"></use>
               </svg>
               <span>+380991111111</span></a
             >
@@ -62,7 +62,51 @@
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button class="hero-button" type="button">Заказати услугу</button>
+        <button class="hero-button" type="button" data-open-modal>Заказати послугу</button>
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal">
+            <ul class="icon-list">
+              <li class="icon-item">
+                <h2 class="title-icon">
+                  Залиште свої дані, ми Вам зателефонуємо
+                </h2>
+                </button>
+                <h3 class="icon-name">Ім’я</h3>
+                <svg class="icon-svg">
+                  <use href="./images/symbol-defs.svg#icon---18-dp-1"></use>
+                </svg>
+                <input class="modal-edit" type="text"></input>
+              </li>
+              <li class="icon-item">
+                <h3 class="icon-name">Телефон</h3>
+                <svg class="icon-svg">
+                  <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1-1"></use>
+                </svg>
+                <input class="modal-edit" type="text"></input>
+              </li>
+              <li class="icon-item">
+                <h3 class="icon-name">Пошта</h3>
+                <svg class="icon-svg">
+                  <use href="./images/symbol-defs.svg#icon-email-black-18dp-1-1"></use>
+                </svg>
+                <input class="modal-edit" type="text"></input>
+              </li>
+              <li class="icon-item">
+                <h3 class="icon-comment">Коментарі</h3>
+                <p class="icon-text">Введите текст</p>
+                <input class="com-edit" type="text">
+              </input>
+              </li>
+              <li>                
+                <input class="com-check" type="checkbox">
+               <p class="icon-final-title">Погоджуюсь з розсилкою і приймаю
+                <span class="conditions-span">Умови договору</span>
+               </p>
+               <button data-close-modal class="close-button" type="button">Надіслати</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!--ЧОМУ ми-->
@@ -108,12 +152,15 @@
           <ul class="work-list">
             <li class="work-item">
               <img src="./images/computerwork.jpg" alt="computerwork" />
+              <p class="work-text">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
             </li>
             <li class="work-item">
               <img src="./images/workphone.jpg" alt="workphone" />
+              <p class="work-text">МОБІЛЬНІ ЗАСТОСУНКИ</p>
             </li>
             <li class="work-item">
               <img src="./images/worktablet.jpg" alt="worktablet" />
+              <p class="work-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
             </li>
           </ul>
         </div>
@@ -133,28 +180,28 @@
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
                     </svg>
                   </a>
                 </li>
@@ -168,28 +215,28 @@
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
                     </svg>
                   </a>
                 </li>
@@ -203,28 +250,28 @@
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
                     </svg>
                   </a>
                 </li>
@@ -238,28 +285,28 @@
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-item">
                   <a class="socials-link">
                     <svg class="socials-contact">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
                     </svg>
                   </a>
                 </li>
@@ -275,42 +322,42 @@
             <li class="logo-item">
               <a class="logo-link">
                 <svg class="logo-icon">
-                  <use href="./images/symbol-defs.svg#icon-logo1"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-1-1"></use>
                 </svg>
               </a>
             </li>
             <li class="logo-item">
               <a class="logo-link">
                 <svg class="logo-icon">
-                  <use href="./images/symbol-defs.svg#icon-logo2"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-2-1"></use>
                 </svg>
               </a>
             </li>
             <li class="logo-item">
               <a class="logo-link">
                 <svg class="logo-icon">
-                  <use href="./images/symbol-defs.svg#icon-logo3"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-3-1"></use>
                 </svg>
               </a>
             </li>
             <li class="logo-item">
               <a class="logo-link">
                 <svg class="logo-icon">
-                  <use href="./images/symbol-defs.svg#icon-logo4"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-4-1"></use>
                 </svg>
               </a>
             </li>
             <li class="logo-item">
               <a class="logo-link">
                 <svg class="logo-icon">
-                  <use href="./images/symbol-defs.svg#icon-logo5"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-5-2"></use>
                 </svg>
               </a>
             </li>
             <li class="logo-iem">
               <a class="logo-link">
                 <svg class="logo-icon">
-                  <use href="./images/symbol-defs.svg#icon-logo6"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-6-1"></use>
                 </svg>
               </a>
             </li>
@@ -349,28 +396,28 @@
             <li class="footer-item">
               <a class="footer-link">
                 <svg class="footer-contact-icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a class="footer-link">
                 <svg class="footer-contact-icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a class="footer-link">
                 <svg class="footer-contact-icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a class="footer-link">
                 <svg class="footer-contact-icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
                 </svg>
               </a>
             </li>
@@ -378,5 +425,25 @@
         </div>
       </div>
     </footer>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Це клік в бекдроп");
+      }
+    </script>
   </body>
 </html>
