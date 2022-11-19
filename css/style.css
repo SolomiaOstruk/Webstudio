@@ -194,18 +194,21 @@ margin-bottom: 12px;
 
 .icon-item{
   position: relative;
+  font: inherit;
+  cursor: pointer;
 }
 
 
 .icon-text{
   position: absolute;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-    color: #757575;
-    top: 250px;
-    left: 57px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+   bottom: 92px;
+  left: 57px;
+
 }
 
 .modal-edit {
@@ -252,6 +255,8 @@ margin-bottom: 12px;
     height: 15px;
     position: absolute;
     left: 52px;  
+    font: inherit;
+    cursor: pointer;
 }
 
 .icon-final-title {
@@ -271,6 +276,8 @@ line-height: 24px;
 letter-spacing: 0.03em;
 text-decoration-line: underline;
 color: #757575;
+font: inherit;
+cursor: pointer;
 
 }
 
@@ -292,6 +299,28 @@ color: #757575;
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+  font: inherit;
+  cursor: pointer;
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 6px;
+    padding-left: 6px;
+    top: 8px;
+    right: 8px;
+    position: absolute;
+}
+
+.modal-close-icon {
+    width: 18px;
+    height: 18px;
+    font: inherit;
+    cursor: pointer;
 }
 
 
@@ -311,6 +340,7 @@ color: #757575;
   padding-right: 24px;
   border: none;
   repeat: no-repeat;
+
 }
 
 /* <!-- Секція текст --> */
@@ -496,6 +526,8 @@ color: #757575;
   fill: #afb1b8;
   width: 20px;
   height: 20px;
+  font: inherit;
+  cursor: pointer;
 }
 
 .socials-list {
@@ -508,6 +540,8 @@ color: #757575;
 .socials-item {
   width: 44px;
   height: 44px;
+  transition-property:background-color,border-radius;
+  transition-duration:1s;
 }
 
 .socials-link:hover .socials-contact {
@@ -557,6 +591,8 @@ color: #757575;
   align-items: center;
   justify-content: center;
   margin-right: 30px;
+  font: inherit;
+  cursor: pointer;
 }
 
 .logo-link:hover {
@@ -592,6 +628,8 @@ color: #757575;
 .footer-link {
   padding: 12px;
   display: flex;
+  font: inherit;
+  cursor: pointer;
 }
 
 .footer-link:hover {
@@ -663,4 +701,67 @@ footer {
   background-color: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
+}
+
+
+.modal-name{
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.modal-text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.modal-list{
+  align-items: center;
+  margin-left: 50px; 
+}
+
+.modal-item{
+  width: 450px;
+height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.btn{
+width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+text-align: center;
+border: none;
+margin-left: 100px;
+margin-bottom: 6;
+}
+
+.icon-send{
+  Width:24px;
+Height:24px;
+fill: #FFFFFF;
+}
+
+.btn-text{
+  font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: #FFFFFF;
 }

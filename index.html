@@ -63,6 +63,7 @@
           вашого бізнесу
         </h1>
         <button class="hero-button" type="button" data-open-modal>Заказати послугу</button>
+        <form action="">
         <div class="backdrop is-hidden" data-backdrop>
           <div class="modal">
             <ul class="icon-list">
@@ -70,31 +71,36 @@
                 <h2 class="title-icon">
                   Залиште свої дані, ми Вам зателефонуємо
                 </h2>
+                <button data-close-modal class="modal-close" type="button">
+                  <svg class="modal-close-icon">
+                      <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1">
+                      </use>
+                  </svg>
                 </button>
-                <h3 class="icon-name">Ім’я</h3>
+                <lable for="name" class="icon-name">Ім’я</lable>
                 <svg class="icon-svg">
                   <use href="./images/symbol-defs.svg#icon---18-dp-1"></use>
                 </svg>
-                <input class="modal-edit" type="text"></input>
+                <input  placeholder="введіть Ім’я" id="name" class="modal-edit" type="text"></input>
               </li>
               <li class="icon-item">
-                <h3 class="icon-name">Телефон</h3>
+                <label for="tel" class="icon-name">Телефон</label>
                 <svg class="icon-svg">
                   <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1-1"></use>
                 </svg>
-                <input class="modal-edit" type="text"></input>
+                <input  placeholder="введіть номер телефону..." id="tel" class="modal-edit" type="text"></input>
               </li>
               <li class="icon-item">
-                <h3 class="icon-name">Пошта</h3>
+                <label for="gmail" class="icon-name">Пошта</label>
                 <svg class="icon-svg">
                   <use href="./images/symbol-defs.svg#icon-email-black-18dp-1-1"></use>
                 </svg>
-                <input class="modal-edit" type="text"></input>
+                <input  placeholder="введіть електронну пошту..." id="gmail" class="modal-edit" type="text"></input>
               </li>
               <li class="icon-item">
-                <h3 class="icon-comment">Коментарі</h3>
+                <label for="coment" class="icon-comment">Коментарі</label>
                 <p class="icon-text">Введите текст</p>
-                <input class="com-edit" type="text">
+                <input id="coment" class="com-edit" type="text">
               </input>
               </li>
               <li>                
@@ -106,6 +112,7 @@
               </li>
             </ul>
           </div>
+        </form>
         </div>
       </section>
 
@@ -422,6 +429,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="container-modal">
+          <ul class="modal-list">
+            <li class="item -modal">
+          <h3 class="modal-name">підпишіться на розсилку</h3>
+        </li>
+        <li class="modal-item">
+          <p class="modal-text">E-mail</p>
+        </li>
+        <li class="item-modal-footer">
+          <button type="button"  class="btn">
+            <span class="btn-text">підписатися</span>
+            <svg class="icon-send">
+              <use href="./images/symbol-defs.svg#icon-icon-send">
+              </use>
+            </svg>
+          </button>
+        </li>
+        </ul>
         </div>
       </div>
     </footer>
