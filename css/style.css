@@ -7,6 +7,10 @@
   right: 0;
 }
 
+body:hover{
+
+}
+
 .header-section .container {
   display: flex;
 }
@@ -51,6 +55,10 @@
   color: #212121;
   width: 45px;
   height: 16px;
+  transition-property:color;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
 
 .header-link:hover {
@@ -66,6 +74,10 @@
   display: flex;
   margin-left: 10px;
   align-items: center;
+  transition-property:color;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
 
 .icon-email {
@@ -73,13 +85,22 @@
   height: 12px;
   fill: #757575;
   margin-right: 10px;
+  transition-property:fill;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
+
 
 .icon-tel {
   width: 10px;
   height: 16px;
   fill: #757575;
   margin-right: 10px;
+  transition-property:fill;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
 
 .list-header {
@@ -156,10 +177,16 @@ margin-bottom: 12px;
 
 .is-hidden{
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none;  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
 }
 
-.icon-name{
+.custom-label{
   text-align: left;
   padding-left: 41px;
   font-weight: 400;
@@ -167,17 +194,36 @@ margin-bottom: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 100px;
+  transform: translate(-50%);
+  transition: transform 250ms line;
+
+
 }
 
-.icon-comment{
+.custom-input:focus + .custom-label,
+.custom-input:not(:placeholder-shown) + .custom-label{
+  transform: translateY(-50px);
+  color: #2196F3;
+}
+
+.form-field:focus-within .custom-input{
+  background-color: white;
+}
+
+.comment-label{
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
   text-align: left;
-  padding-left: 41px;
   margin-bottom: 4px;
+  display: block;
+  margin-left: 50px;
 }
 
 .icon-svg{
@@ -211,18 +257,23 @@ margin-bottom: 12px;
 
 }
 
-.modal-edit {
+.custom-input{
     width: 448px;
     height: 40px;
     box-sizing: border-box;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 10px;
+    padding-left: 42px;
 }
 
-.modal-edit:hover{
+.custom-input:hover{
   border-radius: 4px;
   border: 1px solid #2196F3;
+}
+
+.form-field{
+  position: relative;
 }
 
 .icon-item:hover.icon-svg{
@@ -528,6 +579,10 @@ cursor: pointer;
   height: 20px;
   font: inherit;
   cursor: pointer;
+  transition-property:backgrond-color,fill;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
 
 .socials-list {
@@ -540,8 +595,6 @@ cursor: pointer;
 .socials-item {
   width: 44px;
   height: 44px;
-  transition-property:background-color,border-radius;
-  transition-duration:1s;
 }
 
 .socials-link:hover .socials-contact {
@@ -593,6 +646,10 @@ cursor: pointer;
   margin-right: 30px;
   font: inherit;
   cursor: pointer;
+  transition-property:color,border-color;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
 
 .logo-link:hover {
@@ -630,6 +687,10 @@ cursor: pointer;
   display: flex;
   font: inherit;
   cursor: pointer;
+  transition-property:backgrond-color;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
 
 .footer-link:hover {
@@ -726,42 +787,51 @@ padding-top: 15px;
 padding-bottom: 15px;
 }
 
-.modal-list{
-  align-items: center;
-  margin-left: 50px; 
-}
-
-.modal-item{
-  width: 450px;
-height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.modal-input{
+  border: 1px solid rgba(125, 125, 125, 0.911);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  background: #2F303A;
+  padding-left: 15px;
+  margin-right: 12px;
 }
 
 .btn{
-width: 200px;
-height: 50px;
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-text-align: center;
-border: none;
-margin-left: 100px;
-margin-bottom: 6;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border: none;
+  align-items: center;
+  display: flex;
+  padding-left: 28px;
 }
 
 .icon-send{
-  Width:24px;
-Height:24px;
-fill: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
 }
 
 .btn-text{
   font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.modal-blok{
+  display: flex;
+}
+
+.container-modal{
+  margin-left: 93px;
 }

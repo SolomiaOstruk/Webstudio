@@ -63,9 +63,10 @@
           вашого бізнесу
         </h1>
         <button class="hero-button" type="button" data-open-modal>Заказати послугу</button>
-        <form action="">
-        <div class="backdrop is-hidden" data-backdrop>
+        <form>
+        <div class="backdrop-is-hidden" data-backdrop>
           <div class="modal">
+            <div class="form-field">
             <ul class="icon-list">
               <li class="icon-item">
                 <h2 class="title-icon">
@@ -77,31 +78,32 @@
                       </use>
                   </svg>
                 </button>
-                <lable for="name" class="icon-name">Ім’я</lable>
+              </li>
+                <li class="icon-item">
+                <lable for="name" class="custom-label">Ім’я</lable>
                 <svg class="icon-svg">
                   <use href="./images/symbol-defs.svg#icon---18-dp-1"></use>
                 </svg>
-                <input  placeholder="введіть Ім’я" id="name" class="modal-edit" type="text"></input>
+                <input required autofocus placeholder="введіть Ім’я" id="name"  autocomplete="off"  name="name" class="custom-input" type="text"/>
               </li>
               <li class="icon-item">
-                <label for="tel" class="icon-name">Телефон</label>
+                <label for="tel" class="custom-label">Телефон</label>
                 <svg class="icon-svg">
                   <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1-1"></use>
                 </svg>
-                <input  placeholder="введіть номер телефону..." id="tel" class="modal-edit" type="text"></input>
+                <input required placeholder="введіть номер телефону" id="tel"  autocomplete="off"  name="tel" class="custom-input" type="text"/>
               </li>
               <li class="icon-item">
-                <label for="gmail" class="icon-name">Пошта</label>
+                <label for="email" class="custom-label">Пошта</label>
                 <svg class="icon-svg">
                   <use href="./images/symbol-defs.svg#icon-email-black-18dp-1-1"></use>
                 </svg>
-                <input  placeholder="введіть електронну пошту..." id="gmail" class="modal-edit" type="text"></input>
+                <input required  placeholder="введіть електронну пошту" id="email"  autocomplete="off"  name="email" class="custom-input" type="text"/>
               </li>
               <li class="icon-item">
-                <label for="coment" class="icon-comment">Коментарі</label>
+                <label for="coment" class="comment-label">Коментарі</label>
                 <p class="icon-text">Введите текст</p>
-                <input id="coment" class="com-edit" type="text">
-              </input>
+                <input id="coment" class="com-edit" type="text"/>
               </li>
               <li>                
                 <input class="com-check" type="checkbox">
@@ -112,8 +114,9 @@
               </li>
             </ul>
           </div>
-        </form>
+          </div>
         </div>
+        </form>
       </section>
 
       <!--ЧОМУ ми-->
@@ -431,14 +434,9 @@
           </ul>
         </div>
         <div class="container-modal">
-          <ul class="modal-list">
-            <li class="item -modal">
-          <h3 class="modal-name">підпишіться на розсилку</h3>
-        </li>
-        <li class="modal-item">
-          <p class="modal-text">E-mail</p>
-        </li>
-        <li class="item-modal-footer">
+          <label class="modal-name">підпишіться на розсилку</label>
+        <div class="modal-blok">
+          <input autofocus placeholder="E-mail" class="modal-input" type="text"/>
           <button type="button"  class="btn">
             <span class="btn-text">підписатися</span>
             <svg class="icon-send">
@@ -446,11 +444,10 @@
               </use>
             </svg>
           </button>
-        </li>
-        </ul>
         </div>
       </div>
     </footer>
+
     <script>
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
@@ -471,5 +468,19 @@
         console.log("Це клік в бекдроп");
       }
     </script>
+        <script>
+          (() => {
+            document
+              .querySelector('.custom-input')
+              .addEventListener('focusin', e => {
+                e.currentTarget.placeholder = e.currentTarget.dataset.placeholder;
+              });
+            document
+              .querySelector('.custom-input')
+              .addEventListener('focusout', e => {
+                e.currentTarget.placeholder = '  ';
+              });
+          })();
+        </script>
   </body>
 </html>
