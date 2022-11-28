@@ -1,15 +1,8 @@
 .header-section {
   width: 100%;
   height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
-body:hover{
-
-}
 
 .header-section .container {
   display: flex;
@@ -38,6 +31,7 @@ body:hover{
   display: flex;
   margin-left: 93px;
   align-items: center;
+  position: relative;
 }
 
 .header-item {
@@ -45,6 +39,23 @@ body:hover{
 }
 .header-item:nth-child(1) {
   margin-left: 0;
+}
+
+.header-item::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #2196F3;
+  opacity: 0;
+  transition: opacity 250ms linear 1000ms,  transform 250ms linear 1000ms;
+}
+
+.header-item:hover::after{
+  opacity: 1;
+  transform: scale(1);
 }
 
 .header-link {
@@ -55,10 +66,10 @@ body:hover{
   color: #212121;
   width: 45px;
   height: 16px;
-  transition-property:color;
+  /* transition-property:color;
   transition-duration: 250ms;
-  transition-delay: 1000ms;
-  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
+  transition-delay: 1000ms; */
+  transition: color 250ms linear 1000ms;
 }
 
 .header-link:hover {
@@ -74,10 +85,11 @@ body:hover{
   display: flex;
   margin-left: 10px;
   align-items: center;
-  transition-property:color;
+  /* transition-property:color;
   transition-duration: 250ms;
   transition-delay: 1000ms;
-  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
+  transition: color 250ms linear 1000ms;
 }
 
 .icon-email {
@@ -85,10 +97,11 @@ body:hover{
   height: 12px;
   fill: #757575;
   margin-right: 10px;
-  transition-property:fill;
+  /* transition-property:fill;
   transition-duration: 250ms;
   transition-delay: 1000ms;
-  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
+  transition: fill 250ms linear 1000ms;
 }
 
 
@@ -97,10 +110,11 @@ body:hover{
   height: 16px;
   fill: #757575;
   margin-right: 10px;
-  transition-property:fill;
+  /* transition-property:fill;
   transition-duration: 250ms;
   transition-delay: 1000ms;
-  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
+  transition: fill 250ms linear 1000ms;
 }
 
 .list-header {
@@ -130,9 +144,6 @@ body:hover{
 }
 
 /* main */
-  body{
-    padding-top: 100px;
-  }
 /* section-hero */
 .hero-section {
   padding-top: 200px;
@@ -162,7 +173,8 @@ line-height: 23px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-margin-bottom: 12px;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 
 .modal{
@@ -173,22 +185,28 @@ margin-bottom: 12px;
   background: #FFFFFF;
   position: absolute;
   transform: translate(-50%, -50%);
+  transition: modal 250ms linear 1000ms;
 }
 
-.is-hidden{
+.backdrop.is-hidden{
   opacity: 0;
-  pointer-events: none;  
+  pointer-events: none; 
+}
+
+.backdrop{
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition: backdrop 250ms linear 1000ms;
 }
 
-.custom-label{
+
+.modal-label{
   text-align: left;
-  padding-left: 41px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -199,20 +217,10 @@ margin-bottom: 12px;
   top: 30%;
   left: 100px;
   transform: translate(-50%);
-  transition: transform 250ms line;
 
-
+  
 }
 
-.custom-input:focus + .custom-label,
-.custom-input:not(:placeholder-shown) + .custom-label{
-  transform: translateY(-50px);
-  color: #2196F3;
-}
-
-.form-field:focus-within .custom-input{
-  background-color: white;
-}
 
 .comment-label{
   font-weight: 400;
@@ -232,6 +240,7 @@ margin-bottom: 12px;
   position: absolute;
   top: 40%;
   left: 53.3px;
+  transition: fill 250ms linear 1000ms;
 }
 
 .icon-item:hover{
@@ -257,7 +266,7 @@ margin-bottom: 12px;
 
 }
 
-.custom-input{
+.modal-edit{
     width: 448px;
     height: 40px;
     box-sizing: border-box;
@@ -267,7 +276,7 @@ margin-bottom: 12px;
     padding-left: 42px;
 }
 
-.custom-input:hover{
+.modal-edit:hover{
   border-radius: 4px;
   border: 1px solid #2196F3;
 }
@@ -300,12 +309,13 @@ margin-bottom: 12px;
 
 
 .com-check {
-    display: flex;
-    background: #212121;
-    width: 16px;
-    height: 15px;
-    position: absolute;
-    left: 52px;  
+  display: flex;
+  background: #212121;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 52px;
+  margin-top: 24px;
     font: inherit;
     cursor: pointer;
 }
@@ -579,10 +589,6 @@ cursor: pointer;
   height: 20px;
   font: inherit;
   cursor: pointer;
-  transition-property:backgrond-color,fill;
-  transition-duration: 250ms;
-  transition-delay: 1000ms;
-  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
 }
 
 .socials-list {
@@ -595,20 +601,23 @@ cursor: pointer;
 .socials-item {
   width: 44px;
   height: 44px;
-}
 
-.socials-link:hover .socials-contact {
-  fill: #ffffff;
 }
 
 .socials-link {
   padding: 12px;
   display: flex;
+  transition: backgrond-color  250ms linear 1000ms, fill 250ms linear 1000ms;
 }
 
 .socials-link:hover {
   background-color: #2196f3;
   border-radius: 50%;
+}
+
+
+.socials-link:hover .socials-contact {
+  fill: #ffffff;
 }
 
 /* Постійні клієнти */
@@ -646,10 +655,11 @@ cursor: pointer;
   margin-right: 30px;
   font: inherit;
   cursor: pointer;
-  transition-property:color,border-color;
+  /* transition-property: color, border-color;
   transition-duration: 250ms;
-  transition-delay: 1000ms;
-  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
+  transition-delay: 250ms;
+  transition-timing-function: linear; */
+  transition: color 250ms linear 1000ms, border-color 250ms linear 1000ms;
 }
 
 .logo-link:hover {
@@ -687,10 +697,11 @@ cursor: pointer;
   display: flex;
   font: inherit;
   cursor: pointer;
-  transition-property:backgrond-color;
+  /* transition-property:backgrond-color;
   transition-duration: 250ms;
   transition-delay: 1000ms;
-  transition-timing-function: cubic-bezier(.29,.58,.66,.12);
+  transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
+  transition: backgrond-color  250ms linear 1000ms;
 }
 
 .footer-link:hover {
@@ -769,23 +780,13 @@ footer {
   font-weight: 700;
 font-size: 14px;
 line-height: 16px;
-text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
+display: block;
 }
 
-.modal-text{
-  font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-padding-left: 16px;
-padding-top: 15px;
-padding-bottom: 15px;
-}
 
 .modal-input{
   border: 1px solid rgba(125, 125, 125, 0.911);
@@ -797,6 +798,7 @@ padding-bottom: 15px;
   background: #2F303A;
   padding-left: 15px;
   margin-right: 12px;
+  display: inline-block;
 }
 
 .btn{
@@ -806,9 +808,9 @@ padding-bottom: 15px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border: none;
-  align-items: center;
-  display: flex;
   padding-left: 28px;
+  display: flex;
+  align-items: center;
 }
 
 .icon-send{
@@ -821,17 +823,15 @@ padding-bottom: 15px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
 }
 
-.modal-blok{
-  display: flex;
-}
-
 .container-modal{
   margin-left: 93px;
+}
+
+.modal-blok{
+  display: flex;
 }
