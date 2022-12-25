@@ -1,0 +1,40 @@
+.btn-section{
+
+  &__btn:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}
+
+.btn-section__list {
+  @extend %flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 56px;
+  padding-top: 100px;
+}
+
+.btn-section__list li {
+  margin-right: 8px;
+}
+
+.btn-section__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  transition-property:color,background-color;
+  transition-duration: 250ms;
+  transition-delay: 1000ms;
+  font: inherit;
+  cursor: pointer;
+}

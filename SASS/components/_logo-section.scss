@@ -1,0 +1,49 @@
+.logo-section{
+
+  &__link:hover {
+    color: #2196f3;
+    border-color: #2196f3;
+  }
+}
+
+.logo-section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 47px;
+  }
+  
+  .logo-section__list {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  
+  .logo-section__icon {
+    fill: currentColor;
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-section__link {
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    font: inherit;
+    cursor: pointer;
+    /* transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-delay: 250ms;
+    transition-timing-function: linear; */
+    transition: color 250ms linear 1000ms, border-color 250ms linear 1000ms;
+  }
+  
