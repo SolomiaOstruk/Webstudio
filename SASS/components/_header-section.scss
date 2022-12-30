@@ -28,19 +28,19 @@
   }
 
   &__link:hover {
-    color: #2196f3;
+    color: $hover;
   }
 
   &__contakt:hover {
-    color: #2196f3;
+    color: $hover;
   }
   
   &__icon-tel:hover {
-    fill: #2196f3;
+    fill: $hover;
   }
   
   &__icon-email:hover {
-    fill: #2196f3;
+    fill: $hover;
   }
 }
 

@@ -1,8 +1,8 @@
 .logo-section{
 
   &__link:hover {
-    color: #2196f3;
-    border-color: #2196f3;
+    color: $hover;
+    border-color: $hover;
   }
 }
 
@@ -17,8 +17,7 @@
   }
   
   .logo-section__list {
-    display: flex;
-    align-items: center;
+  @extend %flex;
     padding-bottom: 100px;
   }
   
@@ -30,13 +29,9 @@
 
   .logo-section__link {
     color: #afb1b8;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
     width: 170px;
     height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
     margin-right: 30px;
     font: inherit;
     cursor: pointer;
@@ -45,5 +40,9 @@
     transition-delay: 250ms;
     transition-timing-function: linear; */
     transition: color 250ms linear 1000ms, border-color 250ms linear 1000ms;
+  }
+
+  .logo-section__link{
+    @include logo-section__link ($px-border:1px, $type-border:solid, $color-border: #afb1b8, $px-radius:4px )
   }
   

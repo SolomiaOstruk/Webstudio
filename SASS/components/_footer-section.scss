@@ -96,12 +96,12 @@
   }
   
   footer {
-    background-color: #2f303a;
+    background-color: $footer-background;
     padding-bottom: 60px;
     padding-top: 60px;
 
     &__link:hover {
-      background-color: #2196f3;
+      background-color: $hover;
       border-radius: 50%;
     }
   }
@@ -121,7 +121,7 @@
   .container-modal{
 
     &__input:hover{
-      color: #2196f3;
+      color: $hover;
     }
   }
   

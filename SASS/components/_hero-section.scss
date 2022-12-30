@@ -41,25 +41,25 @@
     transition: modal 250ms linear 1000ms;
 
     &__item:hover{
-      fill: #2196F3;
+      fill: $hover;
     }
 
     &__item:hover &__icon{
-      fill: #2196F3;
+      fill: $hover;
     }
     
     &__com-edit:hover{
-      border:1px solid #2196F3;
+      border:1px solid $hover;
       border-radius: 4px;
       box-sizing: border-box;
     }
     
     &__com-edit:hover &__text{
-      color: #2196F3;
+      color: $hover;
     }
 
     &__conditions-span:hover{
-      color: #2196F3;
+      color: $hover;
    }
   }
   

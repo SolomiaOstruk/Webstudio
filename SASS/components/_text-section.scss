@@ -2,7 +2,7 @@
   &__item::before {
     content: "";
     display: block;
-    background: #f5f4fa;
+    background: $text-section-color;
     border-radius: 4px;
     width: 270px;
     height: 120px;
@@ -62,8 +62,7 @@
 }
 
 .text-section__list {
-  display: flex;
-  justify-content: center;
+@extend %flex;
 }
 
 .text-section__item {

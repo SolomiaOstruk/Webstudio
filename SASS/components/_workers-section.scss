@@ -1,7 +1,6 @@
 
 .workers-section {
     background: #f5f4fa;
-    padding-top: 94px;
     padding-bottom: 94px;
 
     &__item:last-child {
@@ -9,10 +8,14 @@
     }
   }
 
+.workers-section {
+  @include workers-section ($padding-war: 94px) 
+}
+
   .socials-list{
 
    &__link:hover {
-      background-color: #2196f3;
+      background-color: $hover;
       border-radius: 50%;
     }
     

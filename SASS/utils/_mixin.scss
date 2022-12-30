@@ -1,0 +1,14 @@
+@mixin workers-section ($padding-war) {
+    padding-top:$padding-war;
+    padding-bottom: 94px;
+}
+
+@mixin work-section__text ($bottom-war) {
+    padding-bottom: $bottom-war;
+    padding-top: 27px;
+}
+
+@mixin logo-section__link ($px-border, $type-border, $color-border, $px-radius ){
+    border:$px-border $type-border $color-border;
+    border-radius: $px-radius;
+}  
