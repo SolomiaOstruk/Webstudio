@@ -9,10 +9,11 @@
   }
 
 .workers-section {
-  @include workers-section ($padding-war: 94px) 
+  @include padding($padding-war: 94px, $bottom-war: 94px)
 }
 
   .socials-list{
+    @extend %flex;
 
    &__link:hover {
       background-color: $hover;
@@ -57,6 +58,15 @@
     margin-top: 30px;
   }
 
+  .workers-section__name{
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: $workers-color;
+margin-bottom: 16px;
+  }
 
 .socials-list__item {
   width: 44px;
@@ -69,3 +79,9 @@
   @extend %flex;
   transition: backgrond-color  250ms linear 1000ms, fill 250ms linear 1000ms;
 }
+
+.socials-list__contact{
+  fill: $icon-color;
+  width: 20px;
+  height: 20px;
+ }

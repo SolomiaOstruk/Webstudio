@@ -1,4 +1,4 @@
-.container-modal__blok, .container-modal__btn, .footer-blok__location, footer .container, .footer__link, .footer__list, .logo-section__link, .logo-section__list, .socials-list__link, .workers-section__list, .work-section__list, .text-section__list, .modal__com-check, .header-section__item-contakt, .header-section__list-contakt, .header-section__contakt, .header-section__item, .header-section__list, .header-section .container {
+.container-modal__blok, .container-modal__btn, .footer-blok__location, footer .container, .footer__link, .footer__list, .logo-section__link, .logo-section__list, .socials-list__link, .workers-section__list, .socials-list, .work-section__list, .text-section__list, .modal__com-check, .header-section__item-contakt, .header-section__list-contakt, .header-section__contakt, .header-section__item, .header-section__list, .header-section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,8 +352,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #757575;
   font: inherit;
   cursor: pointer;
@@ -481,13 +480,10 @@ p {
 .work-section {
   color: #e5e5e5;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .work-section__item:nth-child(3) {
   margin-right: 0;
-}
-
-.work-section.container {
-  padding-bottom: 92px;
 }
 
 .work-section__title {
@@ -515,14 +511,10 @@ p {
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   position: absolute;
-  padding-top: 27px;
+  margin-top: 27px;
+  margin-bottom: 27px;
   width: 370px;
   bottom: 0;
-}
-
-.work-section__text {
-  padding-bottom: 27px;
-  padding-top: 27px;
 }
 
 .workers-section {
@@ -574,6 +566,16 @@ p {
   margin-top: 30px;
 }
 
+.workers-section__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 16px;
+}
+
 .socials-list__item {
   width: 44px;
   height: 44px;
@@ -583,6 +585,12 @@ p {
   padding: 12px;
   -webkit-transition: backgrond-color 250ms linear 1000ms, fill 250ms linear 1000ms;
   transition: backgrond-color 250ms linear 1000ms, fill 250ms linear 1000ms;
+}
+
+.socials-list__contact {
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
 }
 
 .logo-section__link:hover {
@@ -623,9 +631,6 @@ p {
   transition-timing-function: linear; */
   -webkit-transition: color 250ms linear 1000ms, border-color 250ms linear 1000ms;
   transition: color 250ms linear 1000ms, border-color 250ms linear 1000ms;
-}
-
-.logo-section__link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
