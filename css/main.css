@@ -206,6 +206,8 @@ p {
   top: 50%;
   left: 50%;
   background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -246,6 +248,19 @@ p {
   z-index: 2;
   -webkit-transition: backdrop 250ms linear 1000ms;
   transition: backdrop 250ms linear 1000ms;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 12px;
 }
 
 .modal__label {
@@ -332,7 +347,7 @@ p {
   height: 15px;
   position: absolute;
   left: 52px;
-  margin-bottom: 10px;
+  margin-top: 6px;
   font: inherit;
   cursor: pointer;
 }
@@ -361,7 +376,7 @@ p {
 .modal__button {
   width: 200px;
   height: 50px;
-  background: #2196F3;
+  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -385,9 +400,9 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 6px;
   padding-left: 6px;
+  position: absolute;
   top: 8px;
   right: 8px;
-  position: absolute;
 }
 
 .modal__close {
@@ -511,8 +526,8 @@ p {
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   position: absolute;
-  margin-top: 27px;
-  margin-bottom: 27px;
+  padding-bottom: 27px;
+  padding-top: 27px;
   width: 370px;
   bottom: 0;
 }
