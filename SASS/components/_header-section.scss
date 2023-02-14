@@ -72,7 +72,7 @@
 }
 
 .header-section__item {
-  margin-left: 54px;
+  padding-left: 55px;
   @extend %flex;
 }
 
@@ -88,6 +88,7 @@
     transition-duration: 250ms;
     transition-delay: 1000ms; */
   transition: color 250ms linear 1000ms;
+
 }
 
 .header-section__contakt {
