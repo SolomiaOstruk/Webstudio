@@ -8,6 +8,15 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/effectivesolutions.jpg);
+
+      // @media screen and (min-width: 480px) and (max-width:767px) {
+      
+      
+      // }
+  
+      // @media screen and (min-width: 768px)  and (max-width:1199px) {
+       
+      // }
   }
   .hero-section__title {
     font-weight: 900;
@@ -17,6 +26,19 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 30px;
+    text-shadow: 10px 10px 20px powderblue, 20px 20px 40px blue;
+
+    @media screen and (min-width: 480px) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+    }
   }
 
   .title-icon{
@@ -84,11 +106,24 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    justify-content: center;
-    text-align: center;
     letter-spacing: 0.03em;
     margin-top: 40px;
     margin-bottom: 12px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 480px) {
+      width: 370px;
+    }
+
+    @media screen and (min-width: 768px) {
+      // width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 448px;
+    }
+
   }
   
   
@@ -153,6 +188,18 @@
       border-radius: 4px;
       margin-bottom: 10px;
       padding-left: 42px;
+
+      @media screen and (min-width: 480px) {
+        width: 370px;
+      }
+
+      @media screen and (min-width: 768px) {
+        // width: 370px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 448px;
+      }
   }
 
   .modal__form-field{
@@ -165,6 +212,18 @@
       height: 120px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
+
+      @media screen and (min-width: 480px) {
+        width: 370px;
+      }
+
+      @media screen and (min-width: 768px) {
+        // width: 370px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 448px;
+      }
   }
   
   .modal__com-check {
@@ -187,6 +246,18 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+    }
+    
+    @media screen and (min-width: 768px) {
+      // font-size: 12px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
 }
 
 .modal__conditions-span{
@@ -198,6 +269,18 @@ text-decoration-line: underline;
 color: #757575;
 font: inherit;
 cursor: pointer;
+
+@media screen and (min-width: 480px) {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  // font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  font-size: 14px;
+}
 
 }
 

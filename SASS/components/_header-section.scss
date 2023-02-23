@@ -53,6 +53,11 @@
   color: #2196f3;
   width: 145px;
   height: 31px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: 15px;
+  }
 }
 
 .header-section__color-logo {
@@ -69,6 +74,15 @@
   @extend %flex;
   margin-left: 93px;
   position: relative;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .header-section__item {
@@ -82,12 +96,10 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  width: 45px;
-  height: 16px;
   /* transition-property:color;
     transition-duration: 250ms;
     transition-delay: 1000ms; */
-  transition: color 250ms linear 1000ms;
+  transition: color 150ms linear 850ms;
 
 }
 
@@ -103,7 +115,7 @@
     transition-duration: 250ms;
     transition-delay: 1000ms;
     transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
-  transition: color 250ms linear 1000ms;
+  transition: color 150ms linear 850ms;
 }
 
 .header-section__icon-email {
@@ -115,7 +127,7 @@
   transition-duration: 250ms;
   transition-delay: 1000ms;
   transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
-  transition: fill 250ms linear 1000ms;
+  transition: fill 150ms linear 850ms;
 }
 
 .header-section__icon-tel {
@@ -127,14 +139,33 @@
   transition-duration: 250ms;
   transition-delay: 1000ms;
   transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
-  transition: fill 250ms linear 1000ms;
+  transition: fill 150ms linear 850ms;
 }
 
 .header-section__list-contakt {
   @extend %flex;
   margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 96px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 309px;
+  }
 }
 
 .header-section__item-contakt {
   @extend %flex;
+
 }
+
+// .header-section__list-contakt .header-section__item-contakt{
+//   @media screen and (min-width: 768px) {
+//     margin-bottom: 10px;
+//   }
+// }

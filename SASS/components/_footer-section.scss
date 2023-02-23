@@ -1,8 +1,19 @@
+ .footer{
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 206px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ }
 
   .footer__list {
     @extend %flex;
     margin-top: 16px;
-  }
+
+}
+  
   
   .footer__title {
     font-weight: 700;
@@ -12,6 +23,11 @@
     text-transform: uppercase;
     color: #ffffff;
     text-align: left;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      text-align: center;
+      
+   }
   }
   
   .footer__contact-icon {
@@ -29,7 +45,7 @@
     transition-duration: 250ms;
     transition-delay: 1000ms;
     transition-timing-function: cubic-bezier(.29,.58,.66,.12); */
-    transition: backgrond-color  250ms linear 1000ms;
+    transition: backgrond-color  150ms linear 850ms;
   }
   
   
@@ -56,7 +72,9 @@
   .footer-blok {
     margin-right: 70px;
 
-
+    @media screen and (min-width:480px) and (max-width:767px) {
+    text-align: center;
+    }
   }
   
   .footer-blok__contakt-item {
@@ -76,13 +94,33 @@
   }
   
   .footer-blok__logo {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196f3;
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+    }
+
+    @media screen and (min-width: 768px) {
+       
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #2196f3;
+    }
+
+
   }
   
   .footer-blok__color {
@@ -93,6 +131,32 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #ffffff;
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+  
+  }
+
+  @media screen and (min-width: 768px) {
+     
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
   }
   
   footer {
@@ -105,6 +169,7 @@
       border-radius: 50%;
     }
   }
+
   
   
   .container-modal__name{
@@ -123,6 +188,10 @@
     &__input:hover{
       color: $hover;
     }
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+      display: block;
+    }
   }
   
   .container-modal__input{
@@ -137,6 +206,9 @@
     margin-right: 12px;
     display: inline-block;
     transition: color 250ms linear 250ms;
+    @media screen and (min-width: 480px) and (max-width:767px) {
+      width: 450px;
+    }
   }
   
   .container-modal__btn{
@@ -148,6 +220,12 @@
     border: none;
     padding-left: 28px;
     @extend %flex;
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   .container-modal__icon-send{
@@ -171,5 +249,28 @@
   
   .container-modal__blok{
     @extend %flex;
+    
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+       display: block;
+    }
+
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    footer .container{
+     display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    //  .container{
+    //   display: flex;
+    //  }
+  }
+
+  @media screen and (min-width: 1200px) {
+    // footer .container{
+    //   display: block;
+    //  }
   }
   

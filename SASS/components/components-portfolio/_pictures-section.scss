@@ -18,10 +18,23 @@
 }
 
 .pictures-section__pictures-list {
-  @extend %flex;
+    @extend %flex;
     flex-wrap: wrap;
     margin-top: 20px;
     margin: -15px;
+
+    // @media screen and (min-width: 480px) {
+    //   display: block;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //  display: flex;
+    // }
   }
   
   .pictures-section__pictures-title {

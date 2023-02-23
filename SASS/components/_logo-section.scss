@@ -14,11 +14,53 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 47px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 28px;
+    }
+
+    @media screen and (min-width: 768px) {
+      // font-size: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
   
   .logo-section__list {
   @extend %flex;
     padding-bottom: 100px;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    @media screen and (min-width: 768px) {
+      // display: block;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .logo-section__item{
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      // margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
   
   .logo-section__icon {
@@ -39,7 +81,7 @@
     transition-duration: 250ms;
     transition-delay: 250ms;
     transition-timing-function: linear; */
-    transition: color 250ms linear 1000ms, border-color 250ms linear 1000ms;
+    transition: color 150ms linear 1000ms, border-color 150ms linear 850ms;
     @include logo($px-border:1px, $type-border:solid, $color-border: #afb1b8, $px-radius:4px )
   }
   
