@@ -374,6 +374,9 @@ p {
   padding-left: 24px;
 }
 
+.footer {
+  margin-left: 70px;
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer {
     width: 206px;
@@ -384,10 +387,24 @@ p {
   }
 }
 
+footer .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  footer .container {
+    display: block;
+  }
+}
 .footer__list {
   margin-top: 16px;
 }
-
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__list {
+    display: block;
+  }
+}
 .footer__title {
   font-weight: 700;
   font-size: 14px;
