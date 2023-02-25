@@ -82,6 +82,8 @@
     transition-delay: 250ms;
     transition-timing-function: linear; */
     transition: color 150ms linear 1000ms, border-color 150ms linear 850ms;
-    @include logo($px-border:1px, $type-border:solid, $color-border: #afb1b8, $px-radius:4px )
+    // @include logo($px-border:1px, $type-border:solid, $color-border: #afb1b8, $px-radius:4px )
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
   }
   

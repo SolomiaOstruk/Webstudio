@@ -117,7 +117,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      // width: 370px;
+      width: 370px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -129,16 +129,22 @@
   
   .modal__label{
     text-align: left;
+    padding-left: 41px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
     display: block;
-    position: absolute;
-    top: 30%;
-    left: 100px;
-    transform: translate(-50%);
+    margin-bottom: 4px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+      margin-left: 40px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:199px) {
+      margin-left: 40px;
+    }
   }
 
   .modal__comment{
@@ -151,21 +157,37 @@
     margin-bottom: 4px;
     display: block;
     margin-left: 50px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+      padding-left: 35px;
+    
+    }
+  
+    @media screen and (min-width:768px) and (max-width:199px) {
+      padding-left: 35px;
+    }
   }
 
 .modal__icon{
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 40%;
-  left: 53.3px;
+  z-index: 100;
+  top: 28px;
+  left: 52px; 
   transition: fill 250ms linear 1000ms;
+
+  @media screen and (min-width:480px) and (max-width:767px) {
+    margin-left: 40px;
+  }
+
+  @media screen and (min-width:768px) and (max-width:199px) {
+    margin-left: 40px;
+  }
 }
 
 .modal__item{
   position: relative;
-  font: inherit;
-  cursor: pointer;
 }
 
 .modal__text{
@@ -177,12 +199,21 @@
     color: #757575;
      bottom: 92px;
     left: 57px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+      margin-left: 40px;
+    }
+  
+    @media screen and (min-width:768px) and (max-width:199px) {
+      margin-left: 40px;
+    }
   
   }
   
   .modal__edit{
       width: 448px;
       height: 40px;
+      position: relative;
       box-sizing: border-box;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
@@ -194,7 +225,7 @@
       }
 
       @media screen and (min-width: 768px) {
-        // width: 370px;
+        width: 370px;
       }
 
       @media screen and (min-width: 1200px) {
@@ -218,7 +249,7 @@
       }
 
       @media screen and (min-width: 768px) {
-        // width: 370px;
+        width: 370px;
       }
 
       @media screen and (min-width: 1200px) {
@@ -236,7 +267,18 @@
     margin-top: 6px;
       font: inherit;
       cursor: pointer;
-  }
+
+      @media screen and (min-width:480px) and (max-width:767px) {
+        margin-left: 40px;
+        margin-right: 8px;
+      }
+    
+      @media screen and (min-width:768px) and (max-width:199px) {
+        margin-left: 40px;
+        margin-right: 8px;
+
+     }
+    }
 
   .modal__final-title {
     margin-top: 20px;
@@ -252,7 +294,7 @@
     }
     
     @media screen and (min-width: 768px) {
-      // font-size: 12px;
+      font-size: 12px;
     }
     
     @media screen and (min-width: 1200px) {
@@ -275,7 +317,7 @@ cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  // font-size: 12px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -343,3 +385,4 @@ cursor: pointer;
     repeat: no-repeat;
   
   }
+  

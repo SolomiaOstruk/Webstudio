@@ -1,6 +1,9 @@
 .work-section {
     color: #e5e5e5; 
-   @include padding($padding-war: 94px, $bottom-war: 94px);
+  //  @include padding($padding-war: 94px, $bottom-war: 94px ) ;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
    display: none;
 
   &__item:nth-child(3) {
