@@ -28,7 +28,7 @@
         >
         <ul class="header-section__list">
           <li class="header-section__item">
-            <a href="/" class="header-section__link"> Cтудія</
+            <a href="/" class="header-section__link"> Cтудія</a>
           </li>
           <li class="header-section__item">
             <a href="./portfolio.html" class="header-section__link">Портфоліо</a>
@@ -56,6 +56,11 @@
           </li>
         </ul>
       </div>
+      <!-- <button class="modal-open__button" data-open-modal2>
+        <svg class="modal-open__icon">
+        <use href="./images/symbol-defs.svg#icon-align-justify"></use>
+        </svg>
+      </button> -->
     </header>
 
     <main>
@@ -376,9 +381,8 @@
         </div>
       </section>
     </main>
-
-    <footer>
       <!-- Кінець  -->
+    <footer>
       <div data-aos="flip-down" class="container">
         <div class="footer-blok">
           <a href="/" class="footer-blok__logo"
@@ -451,6 +455,46 @@
     </footer>
 
      <a class="scroll-button" href="">&#8645;</a>
+
+     <!-- <div class="modal is-hidden" data-backdrop2>
+      <svg class="modal__button-close" data-close-modal2>
+        <use href="./img/symbol-defs.svg#icon-close-solid">
+  
+        </use>
+      </svg>
+      <ul class="modal-list">
+        <li class="modal-item">
+          <a class="modal-link" href="/"> Cтудія</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="/">Портфоліо</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="#workers">Контакти</a>
+        </li>
+      </ul>
+    </div> -->
+<!-- 
+    <script>
+      const refs2 = {
+        openModalBtn: document.querySelector("[data-open-modal2]"),
+        closeModalBtn: document.querySelector("[data-close-modal2]"),
+        backdrop: document.querySelector("[data-backdrop2]"),
+      };
+
+      refs.openModalBtn.addEventListener("click2", toggleModal);
+      refs.closeModalBtn.addEventListener("click2", toggleModal);
+
+      refs.backdrop.addEventListener("click2", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden2");
+      }
+
+      function logBackdropClick() {
+        console.log("Це клік в бекдроп");
+      }
+    </script> -->
 
     <script>
       const refs = {

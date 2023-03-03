@@ -63,6 +63,21 @@
     transform: translate(-50%, -50%);
     transition: modal 250ms linear 1000ms;
 
+     @media screen and (min-width:480px) {
+      width: 450px;
+      height: 609px;
+    
+     }
+     @media screen and (min-width:768px) {
+      width: 450px;
+      height: 609px;
+     }
+
+     @media screen and (min-width:1200px) {
+      width: 528px;
+      height: 521px;
+     }
+
     &__item:hover{
       fill: $hover;
     }
@@ -100,6 +115,18 @@
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
     transition: backdrop 250ms linear 1000ms;
+
+    @media screen and (min-width:480px) {
+      position: absolute;
+    }
+
+    @media screen and (min-width:768px) {
+      position: absolute;
+    }
+
+    @media screen and (min-width:1200px) {
+      position: fixed;
+    }
   }
 
   .modal__title{
@@ -178,7 +205,7 @@
   transition: fill 250ms linear 1000ms;
 
   @media screen and (min-width:480px) and (max-width:767px) {
-    margin-left: 40px;
+   margin-left: 40px;
   }
 
   @media screen and (min-width:768px) and (max-width:199px) {
