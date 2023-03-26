@@ -9,14 +9,14 @@
       ),
       url(../images/effectivesolutions.jpg);
 
-      // @media screen and (min-width: 480px) and (max-width:767px) {
+      @media screen and (min-width: 480px) and (max-width:767px) {
+       width: 100%;
       
-      
-      // }
+      }
   
-      // @media screen and (min-width: 768px)  and (max-width:1199px) {
-       
-      // }
+      @media screen and (min-width: 768px)  and (max-width:1199px) {
+        width: 100%;
+      }
   }
   .hero-section__title {
     font-weight: 900;
@@ -27,6 +27,10 @@
     color: #ffffff;
     margin-bottom: 30px;
     text-shadow: 10px 10px 20px powderblue, 20px 20px 40px blue;
+
+    @media screen and (min-width:320px) and (max-width: 480px) {
+      font-size: 26px;
+    }
 
     @media screen and (min-width: 480px) {
       font-size: 26px;
@@ -62,6 +66,12 @@
     position: absolute;
     transform: translate(-50%, -50%);
     transition: modal 250ms linear 1000ms;
+
+    @media screen and (min-width:320px) and (max-width:480px) {
+      width: 450px;
+      height: 609px;
+    
+     }
 
      @media screen and (min-width:480px) {
       width: 450px;
@@ -116,6 +126,10 @@
     z-index: 2;
     transition: backdrop 250ms linear 1000ms;
 
+    @media screen and (min-width: 320px) {
+      position: absolute;
+    }
+
     @media screen and (min-width:480px) {
       position: absolute;
     }
@@ -138,6 +152,10 @@
     margin-bottom: 12px;
     margin-right: auto;
     margin-left: auto;
+
+    @media screen and (min-width: 320px) {
+      width: 370px;
+    }
 
     @media screen and (min-width: 480px) {
       width: 370px;
@@ -289,9 +307,7 @@
     background: #212121;
     width: 16px;
     height: 15px;
-    position: absolute;
-    left: 52px;
-    margin-top: 6px;
+  margin-left: 52px;
       font: inherit;
       cursor: pointer;
 
@@ -315,6 +331,10 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+
+    @media screen and (min-width: 320px) {
+      font-size: 12px;
+    }
 
     @media screen and (min-width: 480px) {
       font-size: 12px;

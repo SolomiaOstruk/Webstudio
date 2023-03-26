@@ -1,6 +1,6 @@
  .footer{
   margin-left: 70px;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 206px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -21,7 +21,7 @@
  footer .container{
   align-items: center;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
      display: block;
   }
 
@@ -39,7 +39,7 @@
     @extend %flex;
     margin-top: 16px;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       display: flex;
    }
  
@@ -67,7 +67,7 @@
     color: #ffffff;
     text-align: left;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       text-align: center;
       
    }
@@ -127,13 +127,26 @@
   .footer-blok {
     margin-right: 70px;
 
-    @media screen and (min-width:480px) and (max-width:767px) {
-    text-align: center;
+    @media screen and (min-width:320px) and (max-width:767px) {
+       margin-left: auto;
+       margin-right: auto;
       }
+
+      @media screen and (min-width:768px) {
+        margin-right: 0;
+       }
+
+       @media screen and (min-width:1200px) {
+        margin-right: 70px;
+       }
   }
   
   .footer-blok__contakt-item {
     margin-bottom: 9px;
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+     text-align: center;
+     }
   }
   
   .footer-blok__location {
@@ -156,34 +169,29 @@
   
   .footer-blok__logo {
 
-    @media screen and (min-width: 480px) and (max-width:767px) {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    width: 145px;
+    height: 31px;
+    display: flex;
+
+    @media screen and (min-width: 320px) and (max-width:767px) {
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
         letter-spacing: 0.03em;
         color: #2196F3;
-          // margin-left: 163px;
-          // margin-right: 163px;
-    }
-
-    @media screen and (min-width: 768px) {
-       
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: #2196f3;
-    }
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
 
 
+  }
   }
   
   .footer-blok__color {
@@ -195,7 +203,7 @@
     letter-spacing: 0.03em;
     color: #ffffff;
 
-    @media screen and (min-width: 480px) and (max-width:767px) {
+    @media screen and (min-width: 320px) and (max-width:767px) {
       font-family: 'Raleway';
       font-style: normal;
       font-weight: 700;
@@ -234,6 +242,14 @@
       @media screen and (min-width: 768px) and (max-width:1199px) {
         width: 100%;
       }
+
+      @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 100%;
+    }
   }
 
   
@@ -246,30 +262,22 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-  display: block;
+  display: flex;
+  text-align: center;
 
-  @media screen and (min-width: 480px) and (max-width:767px) {
+  @media screen and (min-width: 320px) and (max-width:479px) {
      text-align: center;
+     display: block;
+}
+
+@media screen and (min-width: 480px) and (max-width:767px) {
+  text-align: center;
+  display: block;
 }
 
  @media screen and (min-width: 768px) and (max-width:1199px) {
   text-align: center;
 }
-  }
-
-  .container-modal{
-
-    &__input:hover{
-      color: $hover;
-    }
-
-    @media screen and (min-width: 480px) and (max-width:767px) {
-      display: block;
-    }
-
-    @media screen and (min-width: 768px) and (max-width:1999px) {
-      display: block;
-    }
   }
   
   .container-modal__input{
@@ -285,9 +293,11 @@
     display: inline-block;
     transition: color 250ms linear 250ms;
 
-    @media screen and (min-width: 480px) and (max-width:767px) {
+    @media screen and (min-width: 320px) and (max-width:767px) {
       width: 450px;
       margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   
@@ -300,6 +310,12 @@
     border: none;
     padding-left: 28px;
     @extend %flex;
+
+    @media screen and (min-width: 320px) and (max-width:479px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @media screen and (min-width: 480px) and (max-width:767px) {
       display: block;
@@ -330,30 +346,45 @@
   }
   
   .container-modal{
-    margin-left: 93px;
+    text-align: center;
 
-    @media screen and (min-width:320px) and (max-width:480px) {
-     width: 100%;
+    &__input:hover{
+      color: $hover;
     }
 
+    @media screen and (min-width:320px) and (max-width:479px) {
+     width: 100%;
+     display: block;
+    }
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+      width: 100%;
+      display: block;
+     }
+
     @media screen and (min-width:768px) and (max-width:1999px) {
-      margin-left: 0;
+      margin-left: 93px;
+      display: flex;
   
     }
 
     @media screen and (min-width:1200px) {
       margin-left: 93px;
+      display:flex;
   
     }
   }
   
   .container-modal__blok{
     @extend %flex;
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      display: block;
+   }
     
     @media screen and (min-width: 480px) and (max-width: 767px) {
        display: block;
     }
-
 
     @media screen and (min-width: 768px) and (max-width: 1999px) {
       display: block;
@@ -362,6 +393,12 @@
    @media screen and (min-width: 1200px) {
     display: flex;
  }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    footer .container{
+     display: block;
+    }
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -381,4 +418,9 @@
     //   display: block;
     //  }
   }
+
+
+
+
+
   

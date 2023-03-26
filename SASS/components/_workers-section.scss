@@ -31,6 +31,10 @@
   .workers-section__list {
     @extend %flex;
 
+    @media screen and (min-width: 320px) and (max-width:480px) {
+      display: block;
+    }
+
     @media screen and (min-width: 480px) and (max-width:767px) {
       display: block;
     }
@@ -55,6 +59,10 @@
     color: #212121;
     margin-bottom: 50px;
 
+    @media screen and (min-width: 320px) {
+      font-size: 28px;
+    }
+
     @media screen and (min-width: 480px) {
       font-size: 28px;
     }
@@ -73,6 +81,12 @@
     margin-right: 30px;
     background-color: #ffffff;
     padding-bottom: 30px;
+
+    @media screen and (min-width: 320px) and (max-width:480px) {
+      margin-bottom: 30px;
+      width: 100%;
+
+    }
 
     @media screen and (min-width: 480px) and (max-width:767px) {
       margin-bottom: 30px;
@@ -100,6 +114,10 @@
   }
 
   .workers-section__img{
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 480px) and (max-width:767px) {
       width: 100%;

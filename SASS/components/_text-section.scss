@@ -19,6 +19,11 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @media screen and (min-width: 320px) and (max-width:480px) {
+      width: 100%;
+      height: 120px;
+    }
+
     @media screen and (min-width: 480px) and (max-width:767px) {
       width: 100%;
       height: 120px;
@@ -40,6 +45,11 @@
     background-image: url(../images/clock.png);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 320px) and (max-width:480px) {
+      width: 100%;
+      height: 120px;
+    }
 
     @media screen and (min-width: 480px) and (max-width:767px) {
       width: 100%;
@@ -63,6 +73,11 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @media screen and (min-width: 320px) and (max-width:480px) {
+      width: 100%;
+      height: 120px;
+    }
+
     @media screen and (min-width: 480px) and (max-width:767px) {
       width: 100%;
       height: 120px;
@@ -84,6 +99,11 @@
     background-image: url(../images/astronaut\ .png);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 320px) and (max-width:480px) {
+      width: 100%;
+      height: 120px;
+    }
 
     @media screen and (min-width: 480px) and (max-width:767px) {
       width: 100%;
@@ -117,6 +137,10 @@
   margin-bottom: 10px;
   padding-top: 30px;
 
+  @media screen and (min-width:320px) and (max-width: 480px){
+    text-align: center;
+ }
+
   @media screen and (min-width:480px) and (max-width: 767px){
     text-align: center;
  }
@@ -137,6 +161,13 @@
 .text-section__list {
 @extend %flex;
 
+@media screen and (min-width: 320px) and (max-width:480px) {
+  display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
 @media screen and (min-width: 480px) and (max-width:767px) {
   display: block;
     margin-left: 15px;
@@ -156,6 +187,11 @@
 .text-section__item {
   margin-right: 30px;
   width: 270px;
+
+  @media screen and (min-width: 320px) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 
   @media screen and (min-width: 480px) {
     margin-bottom: 30px;
