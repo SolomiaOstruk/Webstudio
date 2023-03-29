@@ -1501,6 +1501,7 @@ p {
 @media screen and (min-width: 1200px) {
   .workers-section__img {
     margin-bottom: 0;
+    width: 270px;
   }
 }
 
