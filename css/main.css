@@ -118,7 +118,7 @@
     opacity: 1;
   }
 }
-.container-modal__blok, .container-modal__btn, .footer-blok__location, footer .container, .footer__link, .footer__list, .logo-section__link, .logo-section__list, .socials-list__link, .workers-section__list, .socials-list, .work-section__list, .text-section__list, .text-section__item::before, .modal__com-check, .header-section__item-contakt, .header-section__list-contakt, .header-section__contakt, .header-section__item, .header-section__list, .header-section .container {
+.container-modal__blok, .container-modal__btn, .footer-blok__location, footer .container, .footer__link, .footer__list, .logo-section__link, .logo-section__list, .socials-list__link, .workers-section__list, .socials-list, .work-section__list, .text-section__list, .text-section__item::before, .modal__com-check, .header-section__item-contakt, .header-section__contakt, .header-section__item, .header-section__list, .header-section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,20 +399,12 @@ p {
   transition: fill 150ms linear 850ms;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .header-section__list-contakt {
-    display: none;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .header-section__list-contakt {
-    display: none;
-  }
+.header-section__list-contakt {
+  display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-section__list-contakt {
     display: block;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -618,11 +610,13 @@ p {
 }
 
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/effectivesolutions.jpg);
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effectivesolutions.jpg);
+  background-position: center;
+  background-size: cover;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero-section {
@@ -632,6 +626,12 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-section {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -678,41 +678,25 @@ p {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  -webkit-transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
+  transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
+  position: absolute;
+  z-index: 100;
   top: 50%;
   left: 50%;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: modal 250ms linear 1000ms;
-  transition: modal 250ms linear 1000ms;
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
+  min-height: 581px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
     width: 528px;
-    height: 521px;
   }
 }
 .modal__item:hover {
@@ -926,22 +910,16 @@ p {
 .modal__com-edit {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-@media screen and (min-width: 480px) {
-  .modal__com-edit {
-    width: 370px;
-  }
+  padding-top: 12px;
+  padding-left: 16px;
+  resize: none;
+  margin-top: 4px;
 }
 @media screen and (min-width: 768px) {
-  .modal__com-edit {
-    width: 370px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .modal__com-edit {
     width: 448px;
   }
@@ -1080,6 +1058,16 @@ p {
   padding-right: 24px;
   border: none;
   repeat: no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .hero-section__button {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section__button {
+    width: 216px;
+  }
 }
 
 .text-section__item::before {
@@ -1372,7 +1360,14 @@ p {
 
 .workers-section {
   background: #f5f4fa;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .workers-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .workers-section__item:last-child {
   margin-right: 0;
@@ -1447,32 +1442,38 @@ p {
 }
 
 .workers-section__item {
-  width: 270px;
-  margin-right: 30px;
   background-color: #ffffff;
   padding-bottom: 30px;
+  -webkit-transition: -webkit-transform 500ms linear 250ms;
+  transition: -webkit-transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .workers-section__item {
     margin-bottom: 30px;
+    margin-right: 0;
     width: 100%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .workers-section__item {
     margin-bottom: 30px;
+    margin-right: 0;
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .workers-section__item {
     margin-bottom: 30px;
+    margin-right: 0;
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .workers-section__item {
     margin-bottom: 0;
+    margin-right: 30px;
     width: 270px;
   }
 }
@@ -1481,6 +1482,11 @@ p {
   .workers-section__item:nth-child(2) {
     margin-right: 0;
   }
+}
+
+.workers-section__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {

@@ -1,4 +1,4 @@
-.container-modal__blok, .container-modal__btn, .footer-blok__location, footer .container, .footer__link, .footer__list, .pictures-section__pictures-list, .btn-section__list, .header-section__item-contakt, .header-section__list-contakt, .header-section__contakt, .header-section__item, .header-section__list, .header-section .container {
+.container-modal__blok, .container-modal__btn, .footer-blok__location, footer .container, .footer__link, .footer__list, .pictures-section__pictures-list, .btn-section__list, .header-section__item-contakt, .header-section__contakt, .header-section__item, .header-section__list, .header-section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,20 +279,12 @@ p {
   transition: fill 150ms linear 850ms;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .header-section__list-contakt {
-    display: none;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .header-section__list-contakt {
-    display: none;
-  }
+.header-section__list-contakt {
+  display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-section__list-contakt {
     display: block;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
