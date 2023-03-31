@@ -1,20 +1,22 @@
+
+
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-open-modal]"),
-      closeModalBtn: document.querySelector("[data-close-modal]"),
-      backdrop: document.querySelector("[data-backdrop]"),
-    };
+  const refs = {
+    openModalBtn: document.querySelector("[data-open-modal]"),
+    closeModalBtn: document.querySelector("[data-close-modal]"),
+    backdrop: document.querySelector("[data-backdrop]"),
+  };
 
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-    refs.backdrop.addEventListener("click2", logBackdropClick);
+  refs.backdrop.addEventListener("click2", logBackdropClick);
 
-    function toggleModal() {
-      refs.backdrop.classList.toggle("is-hidden");
-    }
+  function toggleModal() {
+    refs.backdrop.classList.toggle("is-hidden");
+  }
 
-    function logBackdropClick() {
-      console.log("Це клік в бекдроп");
-    }
+  function logBackdropClick() {
+    console.log("Це клік в бекдроп");
+  }
 })()

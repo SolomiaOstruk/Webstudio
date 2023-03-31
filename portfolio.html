@@ -48,6 +48,11 @@
           >
         </li>
       </ul>
+      <button class="modal-open__button" data-open-modal2>
+        <svg class="modal-open__icon">
+          <use href="./images/symbol-defs.svg#icon-align-justify"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
@@ -240,74 +245,137 @@
   </main>
    <footer  class="footer-section">
   <!-- Кінець  -->
-  <div class="container">
-    <div class="footer-blok">
-      <a href="/" class="footer-blok__logo"
-        >Web<span class="footer-blok__color">Studio</span></a
-      >
+  <footer>
+    <div data-aos="flip-down" class="container">
+      <div class="footer-container">
+        <div class="footer-blok"> 
+        <a href="/" class="footer-blok__logo"
+          >Web<span class="footer-blok__color">Studio</span></a
+        >
 
-      <address class="footer-blok__location">
-        м. Київ пр-т вулиця Лесі Українки, 26
-      </address>
-      <ul class="footer-blok__list-contakt">
-        <li class="footer-blok__contakt-item">
-          <a href="tel:+380991111111" class="footer-blok__contakt">
-            +380991111111
-          </a>
-        </li>
-        <li class="footer-blok__contakt-item">
-          <a href="malto:info@example" class="footer-blok__contakt"
-            >info@example</a
-          >
-        </li>
-      </ul>
+        <address class="footer-blok__location">
+          м. Київ пр-т вулиця Лесі Українки, 26
+        </address>
+        <ul class="footer-blok__list-contakt">
+          <li class="footer-blok__contakt-item">
+            <a href="tel:+380991111111" class="footer-blok__contakt">
+              +380991111111
+            </a>
+          </li>
+          <li class="footer-blok__contakt-item">
+            <a href="malto:info@example" class="footer-blok__contakt"
+              >info@example</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h2 class="footer__title">Приєднуйтесь</h2>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link">
+              <svg class="footer__contact-icon">
+                <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              <svg class="footer__contact-icon">
+                <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              <svg class="footer__contact-icon">
+                <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              <svg class="footer__contact-icon">
+                <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-modal">
+        <h2 class="container-modal__name"
+          >підпишіться на розсилку</h2>
+        <div class="container-modal__blok">
+          <input
+            autofocus
+            placeholder="E-mail"
+            class="container-modal__input"
+            type="text"
+          />
+          <button type="button" class="container-modal__btn">
+            <span class="container-modal__text">підписатися</span>
+            <svg class="container-modal__icon-send">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div >
     </div>
-    <div class="footer">
-      <h2 class="footer__title">Приєднуйтесь</h2>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link">
-            <svg class="footer__contact-icon">
-              <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <svg class="footer__contact-icon">
-              <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <svg class="footer__contact-icon">
-              <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <svg class="footer__contact-icon">
-              <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
-    <div class="container-modal">
-      <label for="gmail" class="container-modal__name">підпишіться на розсилку</label>
-      <div class="container-modal__blok">
-      <input id="gmail" autofocus placeholder="E-mail" class="container-modal__input" type="text"/>
-      <button type="button"  class="container-modal__btn">
-        <span class="container-modal__text">підписатися</span>
-        <svg class="container-modal__icon-send">
-          <use href="./images/symbol-defs.svg#icon-icon-send">
-          </use>
-        </svg>
-      </button>
-    </div>
+  </footer>
+
+  <div class="modal is-hidden2" data-backdrop2>
+    <button class="modal__button-close" data-close-modal2>
+      <svg class="modal__icon-close">
+        <use href=" ./symbol-defs.svg#icon-close "></use>
+      </svg>
+    </button>
+
+    <ul class="modal-list">
+      <li class="modal-item">
+        <a class="modal-link active-page-modal" href=" ./ "> Cтудія </a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href=" ./portfolio.html "> Портфоліо </a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href=" #workers "> Контакти </a>
+      </li>
+    </ul>
+    <ul class="heder-contact-list">
+      <li class="heder-contact-item">
+        <a class="heder-contact-tel" href=" # "> +38 096 111 11 11 </a>
+      </li>
+      <li class="heder-contact-item">
+        <a class="heder-contact-mail" href=" # "> info@devstudio.com </a>
+      </li>
+    </ul>
+    <ul class="heder-social-list">
+      <li class="heder-social-item">
+        <a class="heder-social-link" href=" https://www.instagram.com/ ">
+          Instagram
+          <span class="heder-social-link-span"> | </span>
+        </a>
+      </li>
+      <li class="heder-social-item">
+        <a class="heder-social-link" href=" https://twitter.com/?lang=uk ">
+          Twitter
+          <span class="heder-social-link-span"> | </span>
+        </a>
+      </li>
+      <li class="heder-social-item">
+        <a class="heder-social-link" href=" https://uk-ua.facebook.com/ ">
+          Facebook
+          <span class="heder-social-link-span"> | </span>
+        </a>
+      </li>
+      <li class="heder-social-item">
+        <a class="heder-social-link" href=" https://www.linkedin.com/ ">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
   </div>
-</footer>
 </body>
 </html>

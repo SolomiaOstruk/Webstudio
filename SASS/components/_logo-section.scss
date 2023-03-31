@@ -37,8 +37,9 @@
     padding-bottom: 100px;
 
     @media screen and (min-width: 320px) {
-      display: block;
-
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
 
     }
 
