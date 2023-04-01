@@ -1,4 +1,4 @@
- .footer{
+.footer{
   margin-left: 70px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 206px;
@@ -276,18 +276,23 @@
   }
 
   
-  
-  .container-modal__name{
-  //   font-weight: 700;
-  // font-size: 14px;
-  // line-height: 16px;
-  // letter-spacing: 0.03em;
-  // text-transform: uppercase;
-  // color: #FFFFFF;
-  // margin-bottom: 20px;
-  // display: flex;
-  // text-align: center;
 
+.container-modal {
+  margin-top: 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      margin-right: 0;
+      margin-top: 0;
+      text-align: left;
+  
+  }
+}
+
+.container-modal__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -295,27 +300,29 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-
-  @media screen and (min-width: 320px) and (max-width:479px) {
-     text-align: center;
-     display: block;
 }
 
-@media screen and (min-width: 480px) and (max-width:767px) {
-  text-align: center;
-  display: block;
-}
+.container-modal__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 
- @media screen and (min-width: 768px) and (max-width:1199px) {
-  display: block;
-}
-
-@media screen and (min-width: 1200px)  {
-  display: block;
-}
+  @media screen and (min-width: 480px) {
+      width: 450px;
   }
-  
-  .container-modal__input{
+
+  @media screen and (min-width: 768px) {
+      width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      width: 570px;
+  }
+}
+
+.container-modal__edit {
     border: 1px solid rgba(125, 125, 125, 0.911);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -329,22 +336,18 @@
     @media screen and (min-width: 320px) and (max-width:479px) {
       width: 310px;
       margin-bottom: 20px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     @media screen and (min-width: 480px) and (max-width:767px) {
       width: 450px;
+      margin-left: 20px;
       margin-bottom: 20px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     @media screen and (min-width: 768px) and (max-width:1999px) {
       width: 450px;
       margin-bottom: 20px;
-      margin-left: auto;
-      margin-right: auto;
+  
     }
 
     
@@ -354,109 +357,56 @@
       margin-left: 0;
       margin-right: 12px;
     }
+}
 
-    
-  }
-  
-  .container-modal__btn{
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    border: none;
-    padding-left: 28px;
-    @extend %flex;
+.container-modal__edit:hover,
+.container-modal__edit:focus {
+  border: solid 1px #2196F3;
+  cursor: pointer;
+  height: 70px;
+}
 
-    @media screen and (min-width: 320px) and (max-width:479px) {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.container-modal__button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  display: flex;
+  padding-left: 28px;
+  position: relative;
+  transition: transform 500ms linear 250ms;
+}
 
-    @media screen and (min-width: 480px) and (max-width:767px) {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.container-modal__button:hover, .container-modal__button:focus {
+  transform: scale(1.03);
+}
 
-    @media screen and (min-width: 768px) and (max-width:1999px) {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  
-  .container-modal__icon-send{
-    width: 24px;
-    height: 24px;
-    fill: #FFFFFF;
-  }
-  
-  .container-modal__text{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-  }
-  
-  .container-modal{
-    text-align: center;
+.container-modal__icon-send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 18px;
+  top: 26px;
+  bottom: 13px;
+  transform: translate(-50%, -50%);
+  fill: white;
+}
 
-    &__input:hover{
-      color: $hover;
-    }
+.container-modal__text {
+  font-style: 700;
+  font-size: 16px;
+  line-height: 30px;
+  // font-weight: ;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
 
-    @media screen and (min-width:320px) and (max-width:479px) {
-     width: 100%;
-     display: block;
-    }
-
-    @media screen and (min-width:480px) and (max-width:767px) {
-      width: 100%;
-      display: block;
-     }
-
-    @media screen and (min-width:768px) and (max-width:1999px) {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 60px;
-      display: flex;
-
-  
-    }
-  
-
-    @media screen and (min-width:1200px) {
-      margin-left: 93px;
-      margin-right: 0;
-      margin-top: 0;
-      display:flex;
-  
-    }
-  }
-  
-  .container-modal__blok{
-    @extend %flex;
-
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      display: block;
-   }
-    
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-       display: block;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1999px) {
-      display: block;
-   }
-
-   @media screen and (min-width: 1200px) {
-    display: flex;
- }
-  }
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     footer .container{
